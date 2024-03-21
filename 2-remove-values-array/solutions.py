@@ -19,3 +19,11 @@ class IterativeSolution(Solution):
                 p += 1
         return len(nums)
 
+
+class ImprovedIterativeSolution(Solution):
+    def removeElement(self, nums, val):
+        filtered = [i for i in nums if i != val]
+        del nums[:]
+        nums += filtered
+
+        return len(nums)
