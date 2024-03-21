@@ -13,4 +13,4 @@ class Solution1(object):
 
         nums1.extend(nums2)
         nums1.sort()
-        return  
+        return
