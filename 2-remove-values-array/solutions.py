@@ -11,7 +11,6 @@ class Solution(object):
 class IterativeSolution(Solution):
     def removeElement(self, nums, val):
         p = 0
-
         while p < len(nums):
             if nums[p] == val:
                 nums.pop(p)
@@ -27,3 +26,8 @@ class ImprovedIterativeSolution(Solution):
         nums += filtered
 
         return len(nums)
+
+
+class TwoPointerSolution(Solution):
+    def removeElement(self, nums, val):
+        return super().removeElement(nums, val)
