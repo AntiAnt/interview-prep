@@ -21,4 +21,4 @@ Please use good coding style and you are free to write tests or whatever else wi
 
 part2:
 
-Let's write a function (or a class, your choice) that tells us whether a map is completable. This means whether its possible for a player to complete (even if its improbable). Given a map definition, return whether that map can be completed
+LetThis means whether its possible for a player to complete (even if its improbable). Given a map definition, return whether that map can be com's write a function (or a class, your choice) that tells us whether a map is completable. pleted
