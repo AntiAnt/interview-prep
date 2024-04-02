@@ -8,6 +8,9 @@ def get_majority_element(nums: List[int]) -> int:
         if counter == 0:
             candidate = num
         
-        counter += 1 if num == candidate else -1
+        if num == candidate:
+            counter += 1
+        else:
+            coutner -= 1
 
     return candidate
