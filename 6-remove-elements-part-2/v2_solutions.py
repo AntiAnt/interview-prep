@@ -1,6 +1,5 @@
 from typing import List
 
-
 def remove_dupes_v2(nums: List[int]) -> int:
     pointer = 1
     right = len(nums) - 1
