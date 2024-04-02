@@ -70,8 +70,12 @@ def get_median_of_medians(_list: List[int]) -> int:
 
     if len(_list) % 2 == 0:
         left_median = _list[select(_list=_list, left=left, right=right, k=median_idx)]
-        right_median = _list[select(_list=_list, left=left, right=right, k=median_idx + 1)]
-        print(f"left: {left_median}, right: {right_median}, median: {(left_median + right_median) / 2}")
+        right_median = _list[
+            select(_list=_list, left=left, right=right, k=median_idx + 1)
+        ]
+        print(
+            f"left: {left_median}, right: {right_median}, median: {(left_median + right_median) / 2}"
+        )
         return (left_median + right_median) / 2
     else:
         median = _list[select(_list=_list, left=left, right=right, k=median_idx)]
